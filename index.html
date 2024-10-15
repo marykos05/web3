@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang = "ru">
+    <head>
+<title> HTML 5 страница </title>
+<link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <header>
+            <img id="logo" src="logo.png" alt="Наш лого" />
+            <nav>
+                <span>
+                <a href = "http://kubsu.ru/"> Официальный сайт </a> 
+                <a href = "https://kubsu.ru/ru/contacts"> Контакты </a> 
+                <a href = "https://kubsu.ru/ru/abiturient"> Абитуриентам </a>
+                </span>
+            </nav>
+            <h1>Кубанский государственный университет</h1>
+        </header>
+        <div style="clear:both"></div>
+        <main>
+          <ul>
+            <li> <a href = "http://kubsu.ru/"> КубГУ </a> </li>
+            <li> <a href = "https://kubsu.ru/"> КубГУ </a></li> 
+            <li> <a href = "https://kubsu.ru/"><img src="kub.jpg" width="400" height="300"/></a> </li>
+            <li> <a href = "vntrstr.html"> Внутренняя сокращенная ссылка </a> </li>
+            <li> <a href = "index.html" > Внутренняя ссылка сокращенная </a> </li>
+            <li> <a href = "#myform"> Форма </a></li>
+            <li> <a href = "index.html?a=1&b=2&c=3" > Параметры </a></li>
+            <li> <a href = "index.html?id=102949" > id </a></li>
+            <li> <a href = "second.html" > Ссылка на страницу в той же папке </a></li>
+            <li> <a href = "about.html"> Об университете </a></li>
+            <li> <a href = "../index.html"> Папка выше </a></li>
+            <li> <a href = "../../index.html"> Две папки выше </a></li>
+            <li> <p> Контекстная <a href = "https://sape.omnidesk.ru/l_rus/knowledge_base/item/273403?sid=51111">ссылка</a> внутри абзаца </p></li>
+            <li> <a href = "https://www.kubsu.ru/ru/contacts"> Контакты на внешнем сайте </a></li>
+            <li><map name="primary">
+                <area shape="circle" coords="75,75,75" href="left.html" title="circle"/>
+                <area shape="rect" coords="200,50,300,100" href="right.html" title="rect" />
+              </map>
+              <img usemap="#primary" src="kub.jpg" width="400" height="300" alt="400 x 300" /></li>
+              <li> <a href=""> Пустая ссылка (текущая стр) </li>
+              <li> <a> Ссылка без href </a></li>
+              <li><a href="http://kubsu.ru/" rel="nofollow"> Сюда нельзя </a></li>
+              <li><noindex> <a href = "http://kubsu.ru/"> Не индексировать</a></noindex></li>
+              <li> <ol> <li> <a href = "" title = "Страница 1"> Страница 1</a></li>
+                <li> <a href = "" title = "Страница 2"> Страница 2</a></li>
+                <li> <a href = "" title = "Страница 3"> Страница 3</a></li></ol></li>
+              <li> <a href = "ftp://username:password@kubsu.ru/"> КубГу ФТП</a></li>
+
+
+          </ul>
+          <table>
+            <tr>
+                <th>Заголовок 1 ячейки</th>
+                <th>Заголовок 3 ячейки</th>
+                <th>Заголовок 4 ячейки</th>
+                <th>Заголовок 5 ячейки</th>
+            </tr>
+            <tr>
+            <td colspan="2">Первая ячейка первой строки
+            + вторая ячейка первой строки</td>
+            <td>Третья ячейка первой строки</td>
+            <td>Четвертая ячейка первой строки</td>
+            </tr>
+            <tr>
+            <td>Первая ячейка второй строки</td>
+            <td rowspan="2">Вторая ячейка второй и третьей строки</td>
+            <td>Третья ячейка второй строки</td>
+            <td>Четвертая ячейка второй строки</td>
+            </tr>
+            <tr>
+            <td>Первая ячейка третьей строки</td>
+            
+            <td>Третья ячейка третьей строки</td>
+            <td>Четвертая ячейка третьей строки</td>
+            </tr>
+            <tr>
+            <td colspan="4">Первая ячейка четвертой строки
+            + вторая ячейка четвертой строки
+            + третья ячейка четвертой строки
+            + четвертая ячейка четвертой строки</td>
+            </tr>
+            <tr>
+            <td>Первая ячейка пятой строки</td>
+            <td>Вторая ячейка пятой строки</td>
+            <td>Третья ячейка пятой строки</td>
+            <td>Четвертая ячейка пятой строки</td>
+            </tr>
+            <tr>
+            <td>Первая ячейка шестой строки</td>
+            <td>Вторая ячейка шестой строки</td>
+            <td>Третья ячейка шестой строки</td>
+            <td>Четвертая ячейка шестой строки</td>
+            </tr>
+            </table>
+          <section id="myform">
+          <form action = "" method = "POST">
+            <label>
+                ФИО: <br />
+                <input name = "name" type = "text" class="sto"
+                value = "Киреев Иван Васильевич"/>
+            </label><br />
+            <label> 
+                Телефон: <br />
+                <input name = "telephone" type = "tel" class="sto"
+                value = "8-800-555-35-35"/>
+            </label><br />
+            <label>
+                E-mail: <br />
+                <input name = "email" type = "email" class="sto"
+                value = "example@mail.ru"/>
+            </label><br />
+            <label>
+                Дата: <br />
+                <input name = "date" type = "date" class="sto"
+                value = "2024/09/16" />
+            </label><br />
+                Пол: <br />
+                <label><input name = "sex" type = "radio" value = "Женский" /> Женский </label><br />
+                <label><input name = "sex" type = "radio" value = "Мужской" /> Мужской </label><br />
+                <label for="lang">Выберите любимый язык программирования:</label><br />
+                    <select id="lang" name="lang" multiple>
+                    multiple="multiple">
+                    <option value="Pascal"> Pascal </option>
+                    <option value="C">C</option>
+                    <option value="C++">C++</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="PHP">PHP</option>
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                    <option value="Haskel">Haskel</option>
+                    <option value="Clojure">Clojure</option>
+                    <option value="Prolog">Prolog</option>
+                    <option value="Scala">Scala</option>
+                    </select>
+                <label><br />
+                    Биография:<br />
+                        <textarea name="biography">...</textarea></label><br />
+                    С контрактом ознакомлен (а) :<br />
+                        <label><input type="checkbox" checked="checked"
+                        name="contract" />
+                        Ознакомлен(а)</label><br />
+                <input type="submit" value="Отправить" />
+          </form>
+        </section>
+        </main>
+          <footer>
+            &copy;
+            Кособуцкая Мария,
+            <time datetime="2024">2024</time>
+            </footer>
+
+    </body>
+</html>
